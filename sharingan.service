@@ -1,0 +1,10 @@
+[Unit]
+After=network.target
+
+[Service]
+ExecStart=/usr/sbin/sharingan
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+RequiredBy=network.target

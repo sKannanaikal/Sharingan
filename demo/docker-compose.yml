@@ -1,0 +1,14 @@
+version: "3"
+services:
+  target:
+    build: ./target
+    networks:
+      - vulnerable
+  server:
+    build: ./server
+    networks:
+      - vulnerable
+
+networks:
+  vulnerable:
+    
